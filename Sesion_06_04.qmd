@@ -1,0 +1,52 @@
+---
+title: ""
+format: html
+toc: true
+toc-title: "Índice"
+toc-depth: 3
+toc-location: left
+execute: 
+  echo: false
+  warning: false
+  message: false
+smooth-scroll: true
+embed-resources: true
+css: Plantillas e imagenes/estilo.css
+include-in-header: Encabezado.html
+
+---
+
+En Argentina, la estrategia de vigilancia de IRAs se estructura en tres componentes, entre los cuales se destaca la vigilancia centinela que permite recolectar datos de manera sistemática y oportuna en un número limitado de establecimientos, seleccionados bajo criterios predefinidos.
+
+A continuación, se presenta la información correspondiente a la vigilancia centinela de IRAG e IRAGe en el Hospital "Dra.(...)" durante el año 2025.
+
+```{r}
+source("Scripts/Librerias.R")
+source("Scripts/Importacion base.R")
+source("Scripts/Curva_casos_SE.R")
+
+```
+
+## **Situación epidemiológica**
+
+El **gráfico 1** muestra la distribución por semana de casos notificados durante el año 2025 en la UC-IRAG Hospital "Dra.(..)".
+
+**Gráfico 1:** Casos notificados de IRAG e IRAGe por semana epidemiológica (N = `r casos_totales`)
+
+```{r}
+curva_interactiva
+```
+<br>
+En el periodo estudiado, se notificaron `r casos_IRAG` casos de IRAG y `r casos_IRAGE` casos de IRAGe.
+
+Los casos de IRAG representaron el `r proporcion_irag`% del total mientras que los casos de IRAGe representaron el `r proporcion_irage`%.
+
+
+```{r}
+grafico_curva_casos
+```
+
+
+## **Anexos**
+
+-   Para más información puede consultar la Guía Operativa de Vigilancia Centinela de IRAG en [la web del Ministerio de Salud.](https://www.argentina.gob.ar/sites/default/files/guia-uc-irag-vff.pdf)
