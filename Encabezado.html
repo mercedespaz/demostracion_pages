@@ -1,0 +1,52 @@
+<style>
+  .custom-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #1f78b4;
+    padding: 0 40px;           /* padding horizontal */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 90px;              /* altura fija del header */
+    box-sizing: border-box;
+  }
+
+  /* Usa tres zonas: izquierda (logo), centro (título), derecha (placeholder) */
+  .logo-left, .header-center, .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-left { flex: 0 0 auto; }
+  .header-center { flex: 1 1 auto; justify-content: center; }
+  .header-right { flex: 0 0 40px; } /* “espaciador” simétrico al padding o a otro logo si hubiese */
+
+  .logo {
+    max-height: 60px;          /* <= menor que 90px del header */
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .institution-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+  }
+</style>
+
+<div class="custom-header">
+  <div class="logo-left">
+    <img class="logo" src="Plantillas e imagenes/Logo.png" alt="Logo">
+  </div>
+
+  <div class="header-center">
+    <span class="institution-name">Unidad Centinela de Infección Respiratoria Aguda Grave (UC-IRAG)</span>
+  </div>
+
+  <div class="header-right"></div>
+</div>
