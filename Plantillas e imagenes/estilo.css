@@ -1,0 +1,61 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #666;
+}
+
+h1 {
+  color:#1f78b4 ;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+h2 {
+  color: #a6cee3;
+  text-align: left;
+  font-size: 1.4em;
+}
+
+h3 {
+  color: #a6cee3;
+  text-align: left;
+  font-size: 1.2em;
+  padding-bottom: 15px;
+}
+
+p {
+  color: #000000;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+a {
+  color:#386cb0;
+  text-decoration: none;
+}
+a:hover {
+  color:#80b1d3;
+  text-decoration: underline;
+}
+
+/*Modificaciones en el índice*/
+.sidebar nav#TOC .toc-title {
+  color: #000000 !important;
+}
+
+.sidebar nav#TOC {
+  position: sticky;        
+  top: 100px;  
+}
+
+/* Color normal de los items del índice */
+.sidebar nav#TOC a {
+  color: #000000 !important;
+}
+
+/* Color al pasar el mouse */
+.sidebar nav#TOC a:hover {
+  color: #386cb0 !important;
+}
+
